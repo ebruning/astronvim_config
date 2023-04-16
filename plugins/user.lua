@@ -1,4 +1,8 @@
 return {
+  { 
+    'Bekaboo/deadcolumn.nvim',
+    lazy = false,
+  },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
