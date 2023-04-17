@@ -1,5 +1,5 @@
 return {
-  { 
+  {
     'Bekaboo/deadcolumn.nvim',
     enabled = false,
     lazy = false,
@@ -11,6 +11,8 @@ return {
       require("virt-column").setup()
     end,
   },
+  { "ellisonleao/gruvbox.nvim", enabled = false },
+  { "luisiacc/gruvbox-baby" }
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
