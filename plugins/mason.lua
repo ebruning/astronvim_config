@@ -19,8 +19,9 @@ return {
   {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
+    tag = "v2.0.1",
     opts = {
-      ensure_installed = { "python", "js" },
+      ensure_installed = { "python", "js", "bash" },
     },
   },
 }
