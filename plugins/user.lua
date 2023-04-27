@@ -1,5 +1,20 @@
 return {
   {
+    "nvim-orgmode/orgmode",
+    lazy = false,
+    ft = { "org" },
+    config = function()
+      require("orgmode").setup()
+      require("orgmode").setup_ts_grammar()
+    end,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    ft = "markdown",
+    lazy = true,
+    build = "cd app && npm install && git reset --hard",
+  },
+  {
     "Bekaboo/deadcolumn.nvim",
     enabled = false,
     lazy = false,
