@@ -1,4 +1,6 @@
 return {
+  -- commenting out TOC plugin
+  -- { "mzlogin/vim-markdown-toc", ft = { "markdown" } },
   { "AckslD/nvim-FeMaco.lua", ft = { "markdown" }, opts = {} },
   {
     "folke/twilight.nvim",
