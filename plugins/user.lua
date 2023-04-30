@@ -1,12 +1,16 @@
 return {
   {
+    "akinsho/org-bullets.nvim",
+    lazy = false,
+  },
+  {
     "nvim-orgmode/orgmode",
     lazy = false,
     ft = { "org" },
     config = function()
       require("orgmode").setup {
-        org_default_notes_file = "~/org/default_note.org",
-        org_agenda_files = "~/org/agenda/*",
+        org_default_notes_file = "~/Dropbox/org/default_note.org",
+        org_agenda_files = "~/Dropbox/org/agenda/*",
         org_todo_keywords = { "TODO", "MEET", "NEXT", "WAIT", "|", "JIRA", "DONE", "CANCEL" },
         org_todo_keyword_faces = {
           WAIT = ":foreground orange :weight bold",
@@ -16,7 +20,7 @@ return {
           DONE = ":foreground grey :weight bold",
         },
         org_capture_templates = {
-          t = { description = "Task", template = "* TODO %?\n%u" },
+          t = { description = "Task", template = "* TODO [%<%Y-%m-%d>] %?" },
           n = { description = "Note", template = "* %?\n%u" },
           l = { description = "Line Note", template = "* %?\n%a" },
           j = {
